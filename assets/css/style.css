@@ -7,14 +7,29 @@
   background-color: #b68c5a;
 }
 
-.legal-solution {
+/* banner section  css*/
+.banner {
+  width: 100%;
   height: 600px;
   background-image: url(../img/banner.png);
   background-repeat: no-repeat;
-  background-position: center;
-  border-radius: 5px;
+  background-size: 100% 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
 }
 
+@media screen and (max-width: 600px) {
+  .banner {
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+  }
+}
+
+/* legal practice area */
 .legal-heading {
   margin: 10px 200px;
 }
@@ -27,22 +42,21 @@
 
 /* carousel */
 
-.carousel-caption {
+.c-control {
   transform: translateY(-50%);
   bottom: initial;
-  top: 50%;
+  top: 65%;
 }
 
-.carousel-indicators {
-  transform: translateY(-50%);
-  bottom: initial;
-  top: 80%;
-}
-.h1 {
-  font-size: 60px;
-  color: red;
+.c-item {
+  height: 500px;
 }
 
+.c-img {
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(0.6);
+}
 /* contuct section */
 
 .contact-btn-color {
